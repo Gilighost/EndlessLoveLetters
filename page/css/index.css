@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+
+body{
+  width:100%; 
+  overflow:hidden;
+  margin:0;
+  /*background-color: #b3ffff;*/
+  background-color: #ff66a3;
+}
+
+.letter{
+  padding:10px;
+  line-height: 1.8;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 800px;
+  font-size:1.5em;
+  font-family: 'Homemade Apple', cursive;
+  -webkit-text-stroke: 1px hsla(0,0%,0%,.3);
+  color: black;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+  .letter{
+    line-height: 1.6;
+    font-size:2.35em;
+  }
+
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+  .letter{
+    line-height: 1.6;
+    font-size:1.9em;
+  }
+
+}
+
+@media (max-height: 730px) {
+   .letter{
+      line-height: 1.7;
+      font-size:1.11em;
+      -webkit-text-stroke: 1px hsla(0,0%,0%,.2);
+    }
+  }
